@@ -4,26 +4,28 @@ import java.time.LocalDateTime;
 public class Libro { // O1
 private String titulo;
 private String autor;
+private String genero;
 private int anioPublicacion;
 private boolean leido;
 
-public Libro (String titulo, String autor, int anioPublicacion){ // O1
+public Libro (String titulo, String autor, String genero, int anioPublicacion){ // O1
 this.titulo = titulo;
 this.autor = autor;
+this.genero = genero;
 this.anioPublicacion = anioPublicacion;
 this.leido = false;
 }
 
 public String mostrarInformacion(){ // O1
 
-return ("Título: " + titulo + ", Autor: " + autor + ", Año de Publicación: " + anioPublicacion);
+return ("Título: " + titulo + ", Autor: " + autor + ", Año de Publicación: " + anioPublicacion + ", Género: " + genero);
 }
 
 public void marcarLeido (){ // O1
 
 this.leido = true;
 if (leido = true){
-   System.out.println("El libro ha sido leído: Si");
+   System.out.println("El libro ha sido leído: " + leido);
 }
 
 }
